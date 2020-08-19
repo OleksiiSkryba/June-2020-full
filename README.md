@@ -1,24 +1,12 @@
-# lecture1
+PUT NAME OF THE COMPONENTS INTO THE main.js
 
-## Project setup
-```
-npm install
-```
+like:
+import Vue from 'vue'
+import Events from './Events.vue'
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Vue.config.productionTip = false
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+new Vue({
+  render: h => h(Events),
+}).$mount('#app')
+ 
